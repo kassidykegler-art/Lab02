@@ -41,7 +41,6 @@ except FileNotFoundError:
     st.warning("'data.json' not found. Creating an empty dictionary instead.")
     json_data = {}
 
-st.info("TODO: Add your data loading logic here.")
 
 
 # GRAPH CREATION
@@ -55,7 +54,7 @@ st.header("Graphs")
 st.subheader("Graph 1: Classes and Credit Hours") # CHANGE THIS TO THE TITLE OF YOUR GRAPH
 if not csv_df.empty:
     st.bar_chart(data=csv_df, x="Category", y="Value") #NEW
-    st.write("**Description:**   This bar chart shows the amount of hours studied for each class.")
+    st.write("**Description:**   This bar chart shows the amount of hours studied for each class per week.")
 else:
     st.warning("No data available in 'data.csv' to display the chart.")
 
@@ -81,7 +80,7 @@ if not csv_df.empty:
     else:
         filtered_df = csv_df
     st.line_chart(data=filtered_df, x="Category", y="Value") #NEW
-    st.write("**Description:**   This line chart shows the amount of hours studied for each class.")
+    st.write("**Description:**   This line chart shows the amount of hours studied for each class per and toggles between whether or not that number is greater than 3..")
 else:
     st.warning("No data available in 'data.csv' to display the chart.")
     
@@ -106,7 +105,7 @@ if not json_df.empty:
     else:
         filtered_json = json_df
     st.scatter_chart(data=filtered_json, x="Class", y="RecommendedHours") #NEW
-    st.write("**Description:** This chart displays the recommended study hours for each class. ""Use the radio button above to show only classes with 10 or more study hours. ")
+    st.write("**Description:** This chart displays the recommended study hours for each class. ""Use the radio button above to show only classes that should be studied for 10 or more hours. ")
 else:
     st.warning("No data available in 'data.json' to display the chart.")
 # TO DO:
