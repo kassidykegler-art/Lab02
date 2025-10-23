@@ -1,0 +1,37 @@
+{
+    "chart_title": "Sample Chart Data",
+    "data_points": [
+        {
+            "label": "Math 1551",
+            "value": 7
+        },
+        {
+            "label": "Math 1499",
+            "value": 2
+        },
+        {
+            "label": "BME",
+            "value": 2
+        },
+        {
+            "label": "INTA 1200",
+            "value": 9
+        },
+        {
+            "label": "English 1102",
+            "value": 9
+        },
+        {
+            "label": "GT 1000",
+            "value": 3
+        },
+        {
+            "label": "APPH 1040",
+            "value": 6
+        },
+        {
+            "label": "Chem",
+            "value": 12
+        }
+    ]
+}
